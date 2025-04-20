@@ -73,7 +73,7 @@ Antes de realizar la actividad en laboratorio, se deberá llevar a cabo una simu
    * Estudiar el oscilador en anillo basado en la compuerta NOT.
 
    <div align="center">
-   <img src="/pics/lab01/osc.png" alt="ring-osc" style="width: 400px; height: auto;">
+   <img src="/pics/lab01/osc.png" alt="ring-osc" style="width: 600px; height: auto;">
    </div>
 
 
