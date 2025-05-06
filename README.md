@@ -146,5 +146,6 @@ Esta metodología está diseñada para garantizar una experiencia de aprendizaje
     <td>Comparación de tecnologías CMOS vs TTL</td>
     <td><a href="/labs/lab01/README.md">lab01</a></td>
     <td><a href="https://classroom.github.com/a/hJCE3jcz">Link</a></td>
-    <td></td>
+    <td> 20 May/2025</td>
   </tr>
+
