@@ -148,4 +148,12 @@ Esta metodología está diseñada para garantizar una experiencia de aprendizaje
     <td><a href="https://classroom.github.com/a/hJCE3jcz">Link</a></td>
     <td> 11-14 May/2025</td>
   </tr>
+  <tr>
+    <td>3-4</td>
+    <td>Sumador de 1 y 4bots</td>
+    <td><a href="/labs/lab02/README.md">lab02</a></td>
+    <td><a href="">Link</a></td>
+    <td> 20-22 May/2025</td>
+  </tr>
+
 
