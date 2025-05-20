@@ -17,12 +17,12 @@
 * Una vez instalado, debe abrir ```Quartus```.
 * En la barra de herramientas, navegar en el menú ```File``` y hacer click en  ```New Project Wizard```.
 
-  ![proyectWizard](/pics/lab02/f1.png) 
+  ![proyectWizard](/pics/lab00/f1.png) 
 
 * **Directory, Name, Top-Level Entity**,  seleccione el directorio donde desee guardar el proyecto y el nombre del mismo. Tenga presente que debe colocar el nombre del módulo top en la tercera casilla (puede ser el mismo del proyecto). 
     ***Recuerde:*** El nombre del módulo-top es sensible a mayúsculas.
 
-  ![proyectWizard](/pics/lab02/project.png)
+  ![proyectWizard](/pics/lab00/project.png)
 
 * **Project Type**: Seleccione el template ```Empy project```.
 
@@ -30,15 +30,15 @@
 
 *  **Family, Device & Board Settings**:  Seleccione la referencia de la FPGA  que se va a utilizar, en este caso ```EP4CE10E22C8```. Para mayor comodidad, busque el nombre en la casilla  ```Name filter``` y, por último, seleccione en el panel  ```Available devices``` dicha reerencia.
 
-   ![proyectWizard](/pics/lab02/device.png) 
+   ![proyectWizard](/pics/lab00/device.png) 
 
 
 * **EDA Tool Settings**: Espeficar la herramienta de simulación que se va a utilizar, se recomiendan  ```ModelSim```  o ```Questa```. 
- ![proyectWizard](/pics/lab02/f4.png) 
+ ![proyectWizard](/pics/lab00/f4.png) 
 
 * **Summary**: Se debe revisar que la información de este panel esté acorde según la configuración deseada.
 
-  ![proyectWizard](/pics/lab02/f4b.png) 
+  ![proyectWizard](/pics/lab00/f4b.png) 
 
 
 
@@ -54,28 +54,28 @@
 
 2. Haga click derecho en el nombre del proyecto dentro  de la lista **Entity_:Instance** y escoja la opción **Settings** o en el menú **Assignments** &rarr; **Settings**. 
 
-      ![project_config](/pics/lab02/project_config.png)
+      ![project_config](/pics/lab00/project_config.png)
 
 3. En la ventana ```Settings``` escoger la opción  **Files**  en la lista **Category**. 
 
 4. En el botón ```...``` seleccionar el archivo HDL creado anteriormente (**sum1bcc.v** o **sum1bcc_primitive.v**), que debe estar en el mismo directorio del proyecto. Hacer click en el botón ```Add``` para incluirlo en el proyecto.
 
-      ![project_config](/pics/lab02/project_config_files.png)
+      ![project_config](/pics/lab00/project_config_files.png)
 
 5. Escoja la opción  **General**  en la lista **Category**.
 
 6. En la sección **Top-level entity** haga click en el botón ```...```, lo que  desplegará un cuadro de diálogo, en donde se enlistaran los nombres de los módulos definidos en los archivos incluidos anteriormente. Seleccionar el módulo correspondiente. Este paso consiste en definir un módulo **Top** para el proyecto.
 
-      ![project_config](/pics/lab02/project_config_top.png)
+      ![project_config](/pics/lab00/project_config_top.png)
 
 ### 2. Configurar el Pin-Planner:
 
 Es indispensable asignar las señales de entrada y salida del diseño a pines físicos específicos del FPGA. Esto es crucial porque el FPGA necesita saber qué pines físicos en el dispositivo estarán conectados al mundo externo, ya sea a sensores, actuadores, señales de control, relojes, o cualquier otro periférico. Para ello, en la barra **Standard** (que está debajo de la barra de menús), se debe seleccionar el icono de ```Pin Planer``` que abrirá dicha ventana, donde se encontrará el pinout de la FPGA, como se muestra en las siguientes imágenes:
 
-![pin_planner](/pics/lab02/pin_planner.png)
+![pin_planner](/pics/lab00/pin_planner.png)
 
 
-![pin_planner](/pics/lab02/pin_planner2.png)
+![pin_planner](/pics/lab00/pin_planner2.png)
 
 
 En la parte inferior de la ventana ```Pin Planer``` se puede observar una tabla con las entradas y salidas del diseño, en este caso del sumador de 1 bit.
@@ -94,7 +94,7 @@ En la sección ```Task``` se podrán visualizar las etapas del flujo completo de
 
 1. **Analysis & Synthesis**: 
 
-      ![synthesis](/pics/lab02/synthesis.png)
+      ![synthesis](/pics/lab00/synthesis.png)
 
    Está opción permite que el *software* realice varios pasos para transformar el diseño de alto nivel (escrito en lenguaje HDL) en una representación que pueda implementarse en la FPGA, estos pasos son:
 
@@ -160,17 +160,17 @@ En la sección ```Task``` se podrán visualizar las etapas del flujo completo de
 
 Ahora sólo resta transferir el archivo de configuración generado en el paso anterior a la FPGA, para ello, en la ventana principal de ```Quartus```, se debe dar doble click en la opción ```Program Device (Open Programmer``` que aparece en la sección ```Task```, que abrirá la ventana  ```Programmer``` como se muestra en la imagen.
 
-![programmer](/pics/lab02/programmer.png)
+![programmer](/pics/lab00/programmer.png)
 
 
 En la ventana  ```Programmer``` se debe dar click al botón ```Hardware Setup``` que abrirá usa sub ventana en donde se debe seleccionar el programador ```USB-blaster``` como se muestra en la imagen.
 
-![hw_setup](/pics/lab02/hardware_setup.png)
+![hw_setup](/pics/lab00/hardware_setup.png)
 
 
 * Finalmente, en la ventana  ```Programmer``` se debe dar click al botón ```Start``` que iniciará la configuración de la FPGA, la cual pueden  observar en la barra de progreso (***No desconectar ni mover las conexiones a la FPGA mientras no vean la barra de progreso completada***) como se ve en la siguiente imagen.
 
-![programmer100](/pics/lab02/programmer_100.png)
+![programmer100](/pics/lab00/programmer_100.png)
 
 
 
