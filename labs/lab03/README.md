@@ -86,36 +86,58 @@ En las siguientes figuras se muestra cómo se distribuyen los 7 segmentos en el 
 
 ### Primera parte: Diseño BCD a 7seg
 
-Realizar el diseño, sintentización e implementación del display de $7$ segmentos, que permita visualizar números en representación hexadécimal en uno de los displays de la tarjeta de desarrollo. 
-
-
 Pasos a seguir:
 
 1. Definir el bloque funcional del diseño:
 
     <p align="center">
-        <img src="/pics/lab03/Sseg.png" alt="alt text" width=350 >
+        <img src="/pics/lab03/bcd7seg_block.png" alt="alt text" width=500 >
     </p>
 
 
     Como se evidencia, el bloque tiene un puerto de entrada  llamado ```BCD``` de 4 bits y un puerto de salida llamado ```Sseg``` de 7 bits, lo que concuerda con lo mencionado anteriormente.
 
-2.  Definir la descripción funcional del diseño: Tablas de verdad.
 
-3. Describir usando HDL el comportamiento del diseño. 
+    <!-- Como se evidencia, el bloque tiene un puerto de entrada  llamado ```BCD``` de 4 bits y un puerto de salida llamado ```Sseg``` de 7 bits, lo que concuerda con lo mencionado anteriormente, pero también tiene una salida llamada ```an``` de 4 bits. Esta salida se llama así por "ánodo" y se debe a que la tarjeta de desarrollo cuenta con 4 $displays$ de 7 segmentos y debemos indicarle cuál de estos $displays$ vamos a usar, por eso consta de 4 bits, cada uno de los cuales corresponde a uno de los $displays$.  -->
 
-4. Simular el diseño: Implemente un *testbench* para este fin. 
+2.  Definir la descripción funcional del diseño:
 
-5. Implementación: en la tarjeta correspondiente implemente y valide el funcionamiento.
+    Para ello recuerde que puede hacer uso de las tablas de verdad o de la descripción algorítmica del decodificador BCD a 7 segmentos.
 
-### Segunda parte: Visualización dinámica en 3 displays de 7 segmentos
+3. Describir usando HDL el comportamiento del diseño.
 
-Realizar la integración  del módulo implementado en el ítem anterior con el sumador/restador del [lab02](/laboratorios/2_restador/README.md), siguiento los mismo pasos descritos anteriormente. A continuación se muestra el bloque funcional que deben implementar:
+4. Simulación del diseño.
+<!-- En la parte 1 se visualizaba el número en un sólo *display* de 7 segmentos. Pero en la mayoría de los casos, los 7 pines de los ánodos de cada LED están interconectados entre cada *display*, como se observa en la siguiente figura:
 
+5. Implementación: En la tarjeta de desarrollo implemente y valide el funcionamiento, recuerde definir el *pinout*.
+
+
+### Segunda parte: Visualización Dinámica 4 *Displays* de 7 Segmentos
+<!-- En la parte 1 se visualizaba el número en un sólo *display* de 7 segmentos. P<!-- En la parte 1 se visualizaba el número en un sólo *display* de 7 segmentos. Pero en la mayoría de los casos, los 7 pines de los ánodos de cada LED están interconectados entre cada *display*, como se observa en la siguiente figura:
+ero en la mayoría de los casos, los 7 pines de los ánodos de cada LED están interconectados entre cada *display*, como se observa en la siguiente figura:
+
+<!-- En muchas aplicaciones se requiere más de un display* de 7 segmentos, por lo que es necesario generar una visualización tal que sea necesario el menor número de pines para conectar todos los display con la tarjeta de desarrollo. -->
+
+### Segunda parte: Visualización Dinámica 4 *Displays* de 7 Segmentos
+
+En la parte 1 se visualizaba el número en un sólo display de 7 segmentos. Pero en la mayoría de los casos, los 7 pines de los ánodos de cada LED están interconectados entre cada display, como se observa en la siguientes figuras:
 
 <p align="center">
-        <img src="/pics/lab03/all.png" alt="alt text" width=750 >
-    </p>
+ <img src="/pics/lab03/7segments.png" width=500 height=300>
+</p> 
+
+<p align="center">
+ <img src="/pics/lab03/displays1.jpeg" width=600 height=500>
+</p> 
+
+
+Por lo tanto, se debe realizar una multiplexación entre los ánodos de cada display, con el fin de visualizar en cada display un dígito diferente. En otras palabras, en cada instante de tiempo, sólo un display se encontrará activo, por lo que se debe garantizar que el destello en la visualización entre cada display no sea percibido por el ojo humano para así poder represetar un número de 4 dígitos usando los 4 displays dispoibles. Para ello, cada display debe activarse máximo cada $16\ ms$.
+
+A continuación se muestra el diagrama estructural de esta implementación:
+
+<p align="center">
+ <img src="/pics/lab03/displays_block1.png" width=400 height=200>
+</p> 
 
 
 #### Representación decimal de números negativos
