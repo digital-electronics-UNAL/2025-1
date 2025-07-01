@@ -167,7 +167,7 @@ Esta metodología está diseñada para garantizar una experiencia de aprendizaje
     <td>11-12</td>
     <td> Visualización usando pantalla LCD 16x2</td>
     <td><a href="/labs/lab04/README.md">lab04</a></td>
-    <td><a href="">Link</a></td>
+    <td><a href="https://classroom.github.com/a/dWWoEdMI">Link</a></td>
     <td> 01 Jul/2025</td>
   </tr>
 
