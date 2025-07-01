@@ -156,11 +156,19 @@ Esta metodología está diseñada para garantizar una experiencia de aprendizaje
     <td> 20-22 May/2025</td>
   </tr>
     <tr>
-    <td>6-7</td>
+    <td>6-10</td>
     <td> Decodificador BCD a 7 segmentos</td>
     <td><a href="/labs/lab03/README.md">lab03</a></td>
     <td><a href="https://classroom.github.com/a/Bu-VJ8uj">Link</a></td>
-    <td> 03-06 Jun/2025</td>
+    <td> 01 Jul/2025</td>
+  </tr>
+  </tr>
+    <tr>
+    <td>11-12</td>
+    <td> Visualización usando pantalla LCD 16x2</td>
+    <td><a href="/labs/lab04/README.md">lab04</a></td>
+    <td><a href="">Link</a></td>
+    <td> 01 Jul/2025</td>
   </tr>
 
 
