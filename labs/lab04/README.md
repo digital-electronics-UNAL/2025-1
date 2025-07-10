@@ -77,7 +77,7 @@ La pantalla LCD 16x2 cuenta con múltiples pines para alimentación, control y t
 
 ### Parte 1
 
-Al aceptar el *assignment* del [Lab04](https://github.com/digital-electronics-UNAL/2024-2/tree/main?tab=readme-ov-file#cronograma), clonarán el repositorio correspondiente para la entrega y encontrarán en la carpeta ```src``` archivos fuente que contienen la descripción de hardware necesaria para controlar la pantalla LCD 16x2, permitiendo visualizar texto estático en sus dos filas. 
+Al aceptar el *assignment* del [Lab04](https://github.com/digital-electronics-UNAL/2025-1/tree/main?tab=readme-ov-file#cronograma), clonarán el repositorio correspondiente para la entrega y encontrarán en la carpeta ```src``` archivos fuente que contienen la descripción de hardware necesaria para controlar la pantalla LCD 16x2, permitiendo visualizar texto estático en sus dos filas. 
 
 Con este material deben hacer lo siguiente:
 
