@@ -170,6 +170,15 @@ Esta metodología está diseñada para garantizar una experiencia de aprendizaje
     <td><a href="https://classroom.github.com/a/dWWoEdMI">Link</a></td>
     <td> 01 Jul/2025</td>
   </tr>
+  </tr>
+    <tr>
+    <td>16</td>
+    <td> Proyecto final</td>
+    <td><a>Proyecto</a></td>
+    <td><a href="https://classroom.github.com/classrooms/187415072-unal-digital-electronics-2025-i/assignments/proyecto-entrega-final">Link</a></td>
+    <td> 25 Jul/2025</td>
+  </tr>
+
 
 
  
